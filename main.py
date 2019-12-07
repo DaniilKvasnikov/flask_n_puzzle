@@ -5,6 +5,7 @@ from map import Map
 
 app = Flask(__name__)
 
+
 def get_json():
     with open(path_example, "r") as f:
         size_puzzle = 0
@@ -26,9 +27,11 @@ def get_json():
         print(json_res)
         return json_res
 
+
 @app.route('/')
 def hello():
     return get_json()
+
 
 if __name__ == '__main__':
     app.run()
