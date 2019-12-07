@@ -1,1 +1,1 @@
-path_example = r"C:\Users\123yk\PycharmProjects\flask_n_puzzle\n_puzzle_example\1"
+path_example = r"C:\Users\123yk\PycharmProjects\flask2\n_puzzle_example\1"

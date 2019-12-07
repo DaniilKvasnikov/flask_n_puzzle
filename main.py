@@ -1,5 +1,3 @@
-import json
-
 from flask import Flask
 
 from app import path_example
