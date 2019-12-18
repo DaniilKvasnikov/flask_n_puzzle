@@ -1,13 +1,16 @@
 from flask import Flask
+import os
 
 from app import path_example
 from map import Map
 
+dirname = os.path.dirname(__file__)
 app = Flask(__name__)
 
 
 def get_json():
-    with open(path_example, "r") as f:
+    filename = os.path.join(dirname, path_example)
+    with open(filename, "r") as f:
         size_puzzle = 0
         map_block = []
         map = []
